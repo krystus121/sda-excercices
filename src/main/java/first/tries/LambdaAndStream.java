@@ -1,6 +1,5 @@
 package first.tries;
 
-import com.sun.tools.doclets.formats.html.SingleIndexWriter;
 
 import java.util.Optional;
 import java.util.function.Function;
@@ -52,9 +51,10 @@ public class LambdaAndStream {
         //Optional - klasa, pudełeczko na inny obiekt... ma wsparcie --> ucz się o tym...
         Optional<String> maybeName = Optional.ofNullable(myName);
         maybeName.map(new StringMapper());
-
+       // maybeName.empty();
         maybeName.map(s -> s.length());
                // .ifPresent();
+
 
 
     }
